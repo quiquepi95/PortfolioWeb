@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background:#ccc;
+}
+
+.container{
+	width:80%;
+	background:#fff;
+	margin:20px auto;
+}
+header{
+	background:#999;
+	height:225px;
+	line-height:225px;
+	position:relative;
+}
+header h1{
+	text-align:center;
+	color:#fff;
+	font-size:3.5em;
+	font-weight:lighter;
+	padding-left:150px;
+	box-sizing:border-box;
+	text-shadow:4px 2px 6px #525252;
+}
+header h1 img{
+	width:180px;
+	position:absolute;
+	left:50px;
+	top:20px;
+}
+
+section{
+	width:100%;
+	background:#fff;
+	float:left;
+}
+
+section article.imagen{
+	width:50%;
+	float:left;
+	margin:30px auto;
+}
+section article.imagen img{
+	width:100%;
+}
+section article.form{
+	width:50%;
+	float:right;
+	margin:70px auto 0 auto;
+	padding:20px 0 0 20px;
+	box-sizing:border-box;
+}
+
+section article.form h1{
+	text-align:center;
+	font-size:2em;
+	margin-bottom:20px;
+}
+
+section article.form h1.desc{
+	margin-bottom:50px;
+}
+
+.contact_form ul{
+	width:100%;
+	list-style:none;
+}
+
+.contact_form ul li{
+	padding:12px;
+	border-bottom:1px solid #eee;
+}
+
+.contact_form ul li.ultima{
+	border-bottom:none;
+}
+
+.contact_form label{
+	color:#55555;
+	float:left;
+	width:28%;
+	font-size:0.8em;
+	font-weight:bold;
+	height:30px;
+	line-height:30px;
+}
+
+.contact_form input{
+	width:60%;
+	height:30px;
+	padding:5px 8px;
+	box-sizing:border-box;
+}
+
+.contact_form textarea{
+	width:60%;
+	padding:8px;
+	min-height:50px;
+}
+
+button.submit{
+	font-size:0.7em;
+	color:#444;
+	border:none;
+	padding:9px 17px;
+	border-radius:10px;
+	margin-left:28%;
+}
+
+button.submit:hover{
+	text-decoration:underline;
+	cursor:pointer;
+	background:#1c9adb;
+}

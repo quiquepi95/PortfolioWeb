@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+</head>
+<style type="text/css">
+		.titulo{color:yellow;font-size:50px;font-family:Lucida Calligraphy;}
+		.fotos		{
+				width:800px;
+				height:450px;
+				position:relative;
+				top:-30px;
+				left:-30px;
+				}
+
+		/*empezar la transicion de opacidad*/
+	.fotoSlider{
+			position:absolute;
+			left:0px;
+			top:0px;
+			-webkit-transition: opacity 2s, -webkit-transform 2s;  /* For Safari 3.1 to 6.0 */
+			transition:  opacity 2s,  transform 2s;
+				}
+			/*fin transicicion de opacidad*/
+
+	</style>
+<script type="text/javascript">
+		<!--
+			//principio intercambioimagenes
+		var temp = setInterval('mover()',3500);
+		var cont=0;
+		function mover(){
+		document.getElementById('im1').style.opacity='0';
+		document.getElementById('im2').style.opacity='0';
+		document.getElementById('im3').style.opacity='0';
+		document.getElementById('im4').style.opacity='0';
+		document.getElementById('im5').style.opacity='0';
+		document.getElementById('im6').style.opacity='0';
+		cont++;		
+		if(cont==6){
+			document.getElementById('im1').style.opacity='1';
+		}
+		if(cont==1){
+			document.getElementById('im2').style.opacity='1';
+		}
+		if(cont==2){
+			document.getElementById('im3').style.opacity='1';
+		}
+		if(cont==3){
+			document.getElementById('im4').style.opacity='1';
+		}
+		if(cont==4){
+			document.getElementById('im5').style.opacity='1';
+		}
+		if(cont==5){
+			document.getElementById('im6').style.opacity='1';
+		}
+		
+		if(cont==6)cont=0;
+		}
+		//final intercambio imagenes
+
+		//principio texto desplegable
+		function cambiar(esto){
+		vista=document.getElementById(esto).style.display;
+		if (vista=='none')
+		vista='block';
+		else
+		vista='none';
+
+		document.getElementById(esto).style.display = vista;
+		}
+		//fin texto desplegable
+		//-->
+		</script>
+<body>
+<!-- empezar transicion de imagenes -->
+	<div id="cambiar" class="fotos">
+		<img class="fotoSlider"	 src="http://madridentrecostales.netii.net/macarena/Imagenes/5.jpg"  id="im1" style="opacity:1;" width="100%" height="100%" border="0" alt="">
+		<img class="fotoSlider"  src="http://madridentrecostales.netii.net/macarena/Imagenes/6.jpg" id="im2" style="opacity:0;" width="100%" height="100%" border="0" alt="">
+		<img class="fotoSlider"  src="http://madridentrecostales.netii.net/gitano/Imagenes/4.jpg"  id="im3" style="opacity:0;" width="100%" height="100%" border="0" alt="">
+		<img class="fotoSlider"  src="http://madridentrecostales.netii.net/silencio/Imagenes/3.jpg" id="im4" style="opacity:0;" width="100%" height="100%" border="0" alt="">
+		<img class="fotoSlider"  src="http://madridentrecostales.netii.net/silencio/Imagenes/4.jpg" id="im5" style="opacity:0;" width="100%" height="100%" border="0" alt="">
+		<img class="fotoSlider"  src="http://madridentrecostales.netii.net/gitano/Imagenes/5.jpg" id="im6" style="opacity:0;" width="100%" height="100%" border="0" alt="">
+	</div>
+		<!-- fin transicion de imagenes -->
+</body>
+</html>

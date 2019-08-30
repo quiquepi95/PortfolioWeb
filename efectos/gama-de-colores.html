@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:url(images/tortuga.jpg) no-repeat center fixed;
+	background-size:cover;
+	font-size: .5em;
+	text-align:center;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.container{
+	width:90%;
+	background:#fff;
+	margin:0 auto;
+}
+
+.clear{
+	clear:both;
+}
+section{
+	width:100%;
+	padding-top:10px;
+}
+figure{
+	float:left;
+	width:32%;
+	margin-left:1%;
+}
+figure img{
+	width:100%;
+	border-radius:15px;
+}
+
+/* +++ EFECTOS +++ */
+
+figure img:hover{
+	filter:grayscale(100%);
+	-moz-filter:grayscale(100%);
+	-webkit-filter:grayscale(100%);
+	-o-filter:grayscale(100%);
+	-ms-filter:grayscale(100%);
+}
+.desenfoque{
+	filter:blur(3px);
+	-moz-filter:blur(3px);
+	-webkit-filter:blur(3px);
+	-o-filter:blur(3px);
+	-ms-filter:blur(3px);
+}
+.escala{
+	filter:grayscale(100%);
+	-moz-filter:grayscale(100%);
+	-webkit-filter:grayscale(100%);
+	-o-filter:grayscale(100%);
+	-ms-filter:grayscale(100%);
+}
+.escala:hover{
+	filter:grayscale(0);
+	-moz-filter:grayscale(0);
+	-webkit-filter:grayscale(0);
+	-o-filter:grayscale(0);
+	-ms-filter:grayscale(0);
+	/* en este caso tambien se puede poner filter:none */
+}
+.invertir:hover{
+	filter:invert(100%);
+	-moz-filter:invert(100%);
+	-webkit-filter:invert(100%);
+	-o-filter:invert(100%);
+	-ms-filter:invert(100%);
+}
+.sepia{
+	filter:sepia(100%);
+	-moz-filter:sepia(100%);
+	-webkit-filter:sepia(100%);
+	-o-filter:sepia(100%);
+	-ms-filter:sepia(100%);
+}
+.rotacion{
+	filter:hue-rotate(45deg);
+	-moz-filter:hue-rotate(45deg);
+	-webkit-filter:hue-rotate(45deg);
+	-o-filter:hue-rotate(45deg);
+	-ms-filter:hue-rotate(45deg);
+}
+.brightness{
+	filter:brightness(200%);
+	-moz-filter:brightness(200%);
+	-webkit-filter:brightness(200%);
+	-o-filter:brightness(200%);
+	-ms-filter:brightness(200%);
+}
+.contrast{
+	filter:contrast(200%);
+	-moz-filter:contrast(200%);
+	-webkit-filter:contrast(200%);
+	-o-filter:contrast(200%);
+	-ms-filter:contrast(200%);
+}
+.saturate{
+	filter:saturate(500%) blur(2px);
+	-moz-filter:saturate(500%) blur(2px);
+	-webkit-filter:saturate(500%) blur(2px);
+	-o-filter:saturate(500%) blur(2px);
+	-ms-filter:saturate(500%) blur(2px);
+	/* para combinar efectos a la vez se hace dejando un espacio entre medias */
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<section>
+		<figure>
+			<img src="images/tortuga.jpg" alt=""/>
+            	<figcaption>
+					<h2>Foto Original</h2>
+				</figcaption>
+		</figure>
+        
+		<figure>
+			<img src="images/tortuga.jpg" class="desenfoque" alt=""/>
+            	<figcaption>
+					<h2>Efecto desenfoque</h2>
+				</figcaption>
+		</figure>
+        
+		<figure>
+			<img src="images/tortuga.jpg" class="escala" alt=""/>
+            	<figcaption>
+					<h2>Escala de grises</h2>
+				</figcaption>
+		</figure>
+	</section>
+    
+    <section>
+		<figure>
+			<img src="images/tortuga.jpg" class="invertir" alt=""/>
+            	<figcaption>
+					<h2>Foto invertir</h2>
+				</figcaption>
+		</figure>
+        
+		<figure>
+			<img src="images/tortuga.jpg" class="sepia" alt=""/>
+            	<figcaption>
+					<h2>Foto sepia</h2>
+				</figcaption>
+		</figure>
+        
+		<figure>
+			<img src="images/tortuga.jpg" class="rotacion" alt=""/>
+            	<figcaption>
+					<h2>Foto rotación</h2>
+				</figcaption>
+		</figure>
+	</section>
+    
+    <section>
+		<figure>
+			<img src="images/tortuga.jpg" class="brightness" alt=""/>
+            	<figcaption>
+					<h2>Foto brightness</h2>
+				</figcaption>
+		</figure>
+        
+		<figure>
+			<img src="images/tortuga.jpg" class="contrast" alt=""/>
+            	<figcaption>
+					<h2>Foto tortuga</h2>
+				</figcaption>
+		</figure>
+        
+		<figure>
+			<img src="images/tortuga.jpg" class="saturate" alt=""/>
+            	<figcaption>
+					<h2>Foto tortuga</h2>
+				</figcaption>
+		</figure>
+	</section>
+
+<div class="clear"></div>
+
+</div> <!-- end container -->
+</body>
+</html>

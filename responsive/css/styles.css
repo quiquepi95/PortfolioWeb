@@ -1,0 +1,246 @@
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+
+
+
+		/* +++ CUALQUIER TAMAÑO, ESPECIALMENTE MOVIL +++ */
+body{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:1em;
+}
+
+
+img, object, embed, video {
+	max-width: 100%;
+}
+
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+.fluid {
+	clear: both;
+	margin-left: 0;
+	width: 100%;
+	float: left;
+	display: block;
+}
+
+.fluidList {
+    list-style:none;
+    list-style-image:none;
+    margin:0;
+    padding:0;        
+}
+
+
+/* Mobile Layout: 480px and below. */
+  
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	clear: none;
+	float: none;
+}
+#div1 {
+}
+.zeroMargin_mobile {
+    margin-left: 0;
+}
+.hide_mobile {
+    display: none;
+}
+
+header{
+	width:100%;
+}
+
+header img{
+	width:100%;
+}
+
+header h1{
+	font-size:1.2em;
+	text-align:center;
+	font-weight:lighter;
+	background:#7c7575;
+	color:#fff;
+	padding:0.5em 0;
+	margin:0;
+	line-height:1.1em;
+}
+
+section{
+	padding:0;
+
+}
+
+section p{
+	padding:0;
+	margin:0 0 15px 0;
+}
+
+.una-columna-movil{
+	margin:10px;
+}
+
+.una-columna-movil p{
+	font-size:1em;
+	line-height:1.6em;
+}
+
+/* +++ IMAGENES +++ */
+
+article{
+	width:95%;
+	margin:10px auto;
+	border:3px solid #9f9595;
+	box-sizing:border-box;
+	border-radius:25px;
+}
+
+article img{
+	width:100%;
+}
+
+/* +++ CUADRADOS +++ */
+
+.a{
+	clear:both;
+	width:100%;
+	min-height:200px;
+	background:rgba(255,0,4,1.00);
+	box-sizing:border-box;
+	margin:0 auto;
+}
+.b{
+	width:100%;
+	min-height:200px;
+	background:rgba(0,92,255,1.00);
+	box-sizing:border-box;
+	margin:10px auto;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+
+
+
+		/* +++ TAMAÑOS DE TABLET +++ */
+
+
+
+
+@media only screen and (min-width: 481px) {
+
+.gridContainer {
+	width: 100%;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+}
+.zeroMargin_tablet {
+    margin-left: 0;
+}
+.hide_tablet {
+    display: none;
+}
+
+header h1{
+	font-size:1.4em;
+}
+
+.dos-columnas-tablet{
+	column-count:2; /*para hacer varias columnas y abajo para que salgan en diferentes navegadores*/
+	-moz-column-count:2;
+	-webkit-column-count:2;
+	
+	column-rule:2px dotted rgb(75, 180, 149); /*poner raya entre las columnas*/
+	-moz-column-rule:2px dotted rgb(75, 180, 149);
+	-webkit-column-rule:2px dotted rgb(75, 180, 149);
+	
+	column-gap:30px; /*poner un espacio entre las columnas*/
+	-moz-column-gap:30px;
+	-webkit-column-gap:30px;
+}
+
+/* +++ IMAGENES +++*/
+
+article{
+	width:48%;
+	margin:5px 1%;
+	float:left;
+}
+
+
+
+}
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+
+
+
+		/* +++ TAMAÑOS DE ESCRITORIO ABAJO +++ */
+
+
+
+
+@media only screen and (min-width: 769px) {
+
+.gridContainer {
+	width: 100%;
+	max-width: 1232px;
+	margin: auto;
+	clear: none;
+	float: none;
+	margin-left: auto;
+}
+#div1 {
+}
+.zeroMargin_desktop {
+    margin-left: 0;
+}
+.hide_desktop {
+    display: none;
+}
+header h1{
+	font-size:1.8em;
+}
+
+.tres-columnas-escritorio{
+	column-count:3; /*para hacer varias columnas y abajo para que salgan en diferentes navegadores*/
+	-moz-column-count:3;
+	-webkit-column-count:3;
+}
+
+/* +++ IMAGENES +++*/
+
+article{
+	width:24%;
+	margin:5px 0.3%;
+	float:left;
+}
+
+/* +++ CUADRADOS +++ */
+
+.a{
+	width:59%;
+	float:left;
+	margin-left:1%;
+}
+.b{
+	width:39%;
+	float:right;
+	margin-left:1%;
+	margin-top:0;
+}
+
+}

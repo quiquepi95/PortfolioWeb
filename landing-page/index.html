@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Landing page</title>
+<link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<div class="container">
+<header>
+	<h1><img src="images/logo.png" alt=""/>NUEVO OS X El Capitan</h1>
+    
+</header>
+<section>
+	<article class="imagen">
+    	<img src="images/imac.jpg" alt=""/>
+    </article>
+    <article class="form">
+    
+    	<h1>¿Deseas la nueva actualización?</h1>
+        <h1 class="desc">¡Descárgala ya!</h1>
+    	<form action="#" method="post" class="contact_form">
+
+		<ul>
+
+			<li>
+			<label for="nombre">Nombre:</label> <!-- label para que sepamos que la palabra es una etiqueta. Si lincamos el label al input (for="nombre"), se seleccionará la casilla que hay que rellenar-->
+			<input type="text" name="nombre" id="nombre" required title="Tienes que poner tu nombre" placeholder="Pepe Pérez"/> <!-- required para que un campo sea obligatorio. Title para personalizar el mensaje que sale -->
+			</li>
+            
+			<li>
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" required title="Tienes que escribir tu email" placeholder="ejemplo@correo.com"/>
+			</li>
+            
+			<li class="ultima">
+			<label for="mensaje">Dispositivo:</label>
+			<textarea name="mensaje" id="mensaje" required placeholder="Escriba el nombre de su disposivo"></textarea>
+			</li>
+			<li>
+			<button class="submit" type="submit">Descargar</button>
+			</li>
+		</ul>
+
+		</form>
+    </article>
+</section>
+</div>
+</body>
+</html>

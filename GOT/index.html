@@ -1,0 +1,198 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Juego de tronos</title>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+
+<script>
+$(document).ready(function(){ //esto es como el interruptor para arrancar jquery, lo que está fuera de este interruptor no va a funcionar
+		
+		setTimeout(function(){
+		$('.container').fadeIn(3500); //poner el tiempo en milisegundos
+		},500);
+		
+		setTimeout(function(){
+		$('.cersei img').fadeIn(2500);
+		},1500);
+		
+		setTimeout(function(){
+		$('.tyrion img').fadeIn(2500);
+		},2000);
+		
+		setTimeout(function(){
+		$('.john_nieve img').fadeIn(2500);
+		},3000);
+		
+		setTimeout(function(){
+		$('.daenerys img').fadeIn(2500);
+		},4000);
+		
+		$('.daenerys img').mouseover(function(){ //mouseover es para cuando pasamos el raton por encima
+		$('.daenerys_name').fadeIn(1000);
+		$('.daenerys_name').animate({bottom:'110px'},'slow');
+		});
+		
+		$('.cersei img').mouseover(function(){
+		$('.cersei_name').fadeIn(1000);
+		$('.cersei_name').animate({top:'140px'},'slow');
+		});
+		
+		$('.john_nieve img').mouseover(function(){
+		$('.johnnieve_name').fadeIn(1000);
+		$('.johnnieve_name').animate({top:'240px'},'slow');
+		});
+		
+		$('.tyrion img').mouseover(function(){
+		$('.tyrion_name').fadeIn(1000);
+		$('.tyrion_name').animate({bottom:'50px'},'slow');
+		});
+		
+		$('.titulo').click(function(){
+		$('.sangre').animate({top:'0'},5000);
+		});
+});
+</script>
+
+
+<style type="text/css">
+*{
+	margin:0;
+	padding:0;
+}
+body{
+	background:#000;
+}
+.sangre{
+	width:100%;
+	height:750px;
+	position:absolute;
+	z-index:1000;
+	background:url(images/sangre.png) no-repeat center bottom;
+	top:-850px;
+}
+.sangre:hover{
+	filter:none;
+	-moz-filter:none;
+	-webkit-filter:none;
+	-o-filter:none;
+	-ms-filter:none;
+}
+.container{
+	width:720px;
+	height:500px;
+	background:url(images/bg.jpg) no-repeat;
+	margin:35px auto;
+	position:relative;
+	/* z-index:20; para traer delante el container, ponemos un numero y se pone delante de todo porque el resto tiene valor cero. Abajo ponemos un valor más alto en este caso porque queremos el titulo por delante */
+	display:none;
+}
+.cersei img{
+	width:300px;
+	position:absolute;
+	bottom:-20px;
+	right:150px;
+	display:none;
+}
+.daenerys img{
+	width:300px;
+	position:absolute;
+	bottom:-50px;
+	right:-50px;
+	display:none;
+}
+.john_nieve img{
+	width:400px;
+	position:absolute;
+	bottom:-100px;
+	left:-120px;
+	display:none;
+}
+.tyrion img{
+	width:320px;
+	position:absolute;
+	bottom:-30px;
+	left:100px;
+	display:none;
+}
+
+img:hover{
+	filter:grayscale(100%);
+	-moz-filter:grayscale(100%);
+	-webkit-filter:grayscale(100%);
+	-o-filter:grayscale(100%);
+	-ms-filter:grayscale(100%);
+	transition:all 1.5s ease;
+	-moz-transition:all 1.5s ease;
+	-webkit-transition:all 1.5s ease;
+	-o-transition:all 1.5s ease;
+	-ms-transition:all 1.5s ease;
+}
+
+		/* +++ TITULO +++ */
+		
+.titulo{
+	width:100%;
+	background:url(images/fondo_superior.png) no-repeat center top;
+	width:100%;
+	height:200px;
+	position:absolute;
+	top:535px;
+	/*z-index:200;*/
+}
+.titulo img{
+	width:100%;
+}
+
+		/* +++ TITULO +++ */
+		
+.tyrion_name{
+	position:absolute;
+	bottom:40px;
+	left:270px;
+	z-index:20;
+	display:none;
+}
+.johnnieve_name{
+	position:absolute;
+	top:250px;
+	left:-100px;
+	z-index:20;
+	display:none;
+}
+.daenerys_name{
+	position:absolute;
+	bottom:100px;
+	right:-100px;
+	z-index:20;
+	display:none;
+}
+.cersei_name{
+	position:absolute;
+	top:150px;
+	left:260px;
+	z-index:20;
+	display:none;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+	
+    <span class="tyrion_name"><img src="images/tyrion_name.png"/></span>
+    <span class="johnnieve_name"><img src="images/johnnieve_name.png"/></span>
+    <span class="daenerys_name"><img src="images/daenerys_name.png"/></span>
+    <span class="cersei_name"><img src="images/cersei_name.png"/></span>
+
+	<a href="#" class="cersei"><img src="images/cersei.png" alt=""/></a>
+    <a href="#" class="daenerys"><img src="images/daenerys.png" alt=""/></a>
+    <a href="#" class="john_nieve"><img src="images/john_nieve.png" alt=""/></a>
+    <a href="#" class="tyrion"><img src="images/tyrion.png" alt=""/></a>
+</div> <!-- end container -->
+<div class="titulo">
+</div> <!-- end titulo -->
+<div class="sangre">
+</div> <!-- end sangre -->
+</body>
+</html>

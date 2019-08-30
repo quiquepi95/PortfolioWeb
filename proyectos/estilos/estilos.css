@@ -1,0 +1,123 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+	}
+	
+body{
+	background:#303030 url(../img/bg.png);
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:1em;
+	}
+	
+.container{
+	width:600px;
+	background:url(../img/fondo.png);
+	min-height:500px;
+	margin:50px auto;
+	padding:10px; /*hacer borde interior*/
+	box-sizing:border-box; /*esto para cuando ponemos un padding y no queremos que crezca el container en este caso, el borde interior no hace que crezca la capa*/
+	box-shadow:1px 0px 50px #00FF15; /*poner sombra*/
+	}
+	
+	/* +++ HEADER +++ */
+	
+header{
+	height:100px;
+	background:url(../img/header_bg.png);
+	}
+
+h1{
+	color:#fff;
+	text-align:center;
+	font-size:1.5em;
+	padding-top:70px;
+	}
+	
+	/* +++ NAV +++ */
+	
+nav{
+	height:40px;
+	margin-top:10px; /*separar el nav del header*/
+	}
+	
+nav ul{
+	width:100%;
+	}
+	
+nav ul li{
+	width:33.3%;
+	float:left;
+	list-style:none;
+	text-align:center;
+	border-right:1px solid #000000;
+	box-sizing:border-box;
+	}
+	
+nav ul li a:link, nav ul li a:visited{
+	color:#000;
+	display:block; /*en este caso, el enlace hace que ocupe todo el espacio del que dispone*/
+	height:40px;
+	line-height:40px; /*si el interlineado es igual que el height, el texto se centra*/
+	text-decoration:none;
+	}
+	
+nav ul li a:hover{
+	text-decoration:underline;
+	}
+	
+nav ul li.inicio{
+	width:100%;
+	background:#F3C0BE;
+	border-right:none;
+	}
+/* +++ COLORES DEL MENU +++ */
+nav ul li.primero{
+	background:#FF0004;
+	}
+	
+nav ul li.segundo{
+	background:#3B5EFF
+	}
+	
+nav ul li.tercero{
+	background:#57FF75;
+	border-right:none;
+	}
+	/* +++ SECTION +++ */
+section{
+	background:#fff;
+	padding:20px;
+	height:400px;
+	margin-top:10px;
+	}
+	
+h2{
+	font-size:1.2em;
+	}
+	
+	/* +++ FOOTER +++ */
+	
+footer{
+	height:40px;
+	line-height:40px;
+	background:#F3C0BE;
+	margin-top:10px; /*separar el footer de la section*/
+	text-align:center;
+	font-size:0.8em;
+	}
+
+
+footer a:link, footer a:visited{
+	color:#fff;
+	display:block;
+	height:40px;
+	text-decoration:none;
+	font-size:1.5em;
+	}
+	
+footer a:hover{
+	text-decoration:underline;
+	}

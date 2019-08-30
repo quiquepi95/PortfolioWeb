@@ -1,0 +1,50 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size:1em;
+	line-height:1.3em;
+	background:#DABF7C;
+	}
+	
+.container{
+	width:80%;
+	max-width:1000px;
+	background:white;
+	margin:0px auto;
+	}
+	
+	/* +++ HEADER +++ */
+
+header img{
+	width:800px;
+	max-width:900px;
+	padding:0px auto;
+	}
+	
+	/* +++ MENÚ PRINCIPAL (NAV) +++ */
+
+nav{
+	width:100%;
+	}
+	
+nav ul{
+	width:100%;
+	list-style:none;
+	border-top:5px solid #D79128;
+	}
+	
+nav ul li{
+	width:15%;
+	float:left;
+	text-align:center;
+	background:#c2b114;
+	border-right:1px #fff solid;
+	box-sizing:border-box; /*esto hace que se incorpore dentro del ancho que tengamos*/
+	}

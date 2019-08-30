@@ -1,0 +1,85 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="">
+<!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Taberna El Manchego - Tostadas, raciones, bocadillos, menu del dia Granada</title>
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"/>
+<link href="css/boilerplate.css" rel="stylesheet" type="text/css">
+<link href="css/styles.css" rel="stylesheet" type="text/css">
+<script src="js/respond.min.js"></script>
+<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+</head>
+<body>
+	<div class="gridContainer clearfix">
+		<div id="div1" class="fluid">
+        
+        <header>
+        	<h1>
+        		<img src="images/encabezado.jpg" alt="Taberna El Manchego. Tostadas - Raciones - Bocadillos - Menu del dia. Calle Duquesa 24, 18001, Granada. Tlf: 958278515 - 639781085">
+                <a href="https://es-es.facebook.com/" target="_blank"><i id="icon" class="fa fa-facebook-official fa-2x"></i></a>
+        	</h1>
+            <hgroup>
+            	<h2>Taberna El Manchego</h2>
+            	<h3>Tostadas - Raciones -Bocadillos</h3>
+            	<h3>Menú del día</h3>
+            	<h3>Calle Duquesa 24, 18001 Granada</h3>
+            	<h3>Tlf: 958278515 - 639781085</h3>
+            </hgroup>
+        </header>
+        
+        <nav id="menu">
+        
+        	<li id="nav_mobile">Menú <img src="images/icono_menu.png" alt="" class="icono2"/></li>
+            
+            <div class="oculto">
+        	<ul>
+    			<li class="encima"><a href="index.html" class="current" title="Inicio">Inicio</a></li>
+        		<li class="encima"><a href="donde-estamos.html" title="Donde estamos">Dónde estamos</a></li>
+        		<li class="encima"><a href="menu-del-dia.html" title="Menu del dia">Menú del día</a></li>
+        		<li class="encima"><a href="carta-de-tapas.html" title="Carta de tapas">Cartas de tapas</a></li>
+        		<li class="encima"><a href="imagenes.html" title="Imágenes">Imágenes</a></li>
+        		<li class="ultima encima"><a href="contacto.html" title="Contacto">Contacto</a></li>
+     		</ul>
+            </div><!-- end oculto -->
+        </nav>
+        
+        <section class="ini">
+        	<article>
+            	<h1>Inicio</h1>
+        			<p><strong>La Taberna el Manchego</strong>, es una taberna/bar de Granada basada en la gastronomía típica manchega, así como la gastronomía de Granada y sus alrededores. En <strong>La Taberna el Manchego</strong> podrán disfrutar de una gran variedad de tapas, tostadas, raciones, bocadillos, menú del día, celebración comidas y cenas de empresa, celebración de comuniones, tapeo típico en Granada, ofertas para estudiantes, menú a la carta, comida casera, platos típicos manchegos, etc.</p>
+            </article>
+            <aside>
+            <h1>El tiempo en Granada</h1>
+            	<div class="tiempo">
+            	<div id="c_7d6c0a0f1b21b317f534af72cd279067" class="alto"></div><script type="text/javascript" src="http://www.eltiempo.es/widget/widget_loader/7d6c0a0f1b21b317f534af72cd279067"></script>
+            </div> <!-- end tiempo-->
+            </aside>
+            <div class="clear"></div>
+        </section>
+ 
+        <footer>
+        	<p>Copyright Taberna El Manchego. <a href="#">Aviso Legal</a>.</p>
+        </footer>
+        
+        <script>
+	//alert('Funciona'); ponemos para ver que funciona
+	$('#nav_mobile').click(function(){
+			//alert('funciona');
+			$('.oculto').slideToggle('slow'); //con esto conseguimos que se despliegue el menu y ademas baje despacio
+			}); //ponemos el simbolo del dolar y entre parentesis llamamos al id o al class con su respectiva forma de llamarlo (# o .)
+	
+			$('#menu ul li').click(function(){
+			$(this).find('ul').slideToggle('slow');
+			});
+	</script>
+        </div><!-- end div1 -->
+	</div><!-- end gridContainer -->
+</body>
+</html>
